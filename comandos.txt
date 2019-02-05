@@ -9,3 +9,8 @@ git push -u origin master
 --------------------------------------
 
 git add .
+
+git commit -n 'mensaje de lo que acabo de hacer'	
+	      'actividad numero 1'
+
+git push -u origin master
