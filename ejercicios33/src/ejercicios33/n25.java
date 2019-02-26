@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author danny
  */
-public class n27 {
+public class n25 {
 
     /**
      * @param args the command line arguments
@@ -19,22 +19,19 @@ public class n27 {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner entrada = new Scanner(System.in);
-        int fecha_ac = 0;
-        int fecha_na = 0;
-        
-        System.out.println("ingrese fecha actual");
-        fecha_ac = entrada.nextInt();
-        System.out.println("ingrese fecha nacimiento");
-        fecha_na = entrada.nextInt();
-        
-        int edad = (fecha_ac - fecha_na);
-        
-        if(edad > 0 && fecha_ac > 0 && fecha_ac > fecha_na )
+        int numero1 = 0;
+        int numero2 = 0;
+        System.out.println("ingrese un numero");
+        numero1 = entrada.nextInt();
+        System.out.println("ingrese un segundo numero");
+        numero2 = entrada.nextInt();
+        if (numero1 >= 0 && numero2 >= 0)
         {
-            System.out.println("su edad es de "+(fecha_ac - fecha_na));
+            System.out.println("la suma es:."+(numero1+numero2));
+            System.out.println("la multiplicacion es:."+(numero1*numero2));
         }
         else{
-            System.out.println("la fecha nacimiento es negativa");
+            System.out.println("ingrese un numero positivo");
         }
         
     }

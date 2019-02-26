@@ -20,16 +20,20 @@ public class n11 {
         // TODO code application logic here
         Scanner entrada = new Scanner (System.in);
         
-        int numero= 0;
-        int hora = 0;
-        int minuto = 0; 
-        int segundo = 0;
-        System.out.println("ingrese los segundos ");
-        numero=entrada.nextInt();
-        hora=numero/3600;
-        minuto=(numero-(3600*hora))/60;
-        segundo=numero-((hora*3600)+(minuto*60));
-        System.out.println(hora+"h "+minuto+"m "+segundo+"s");
+        float presio_s= (float) 0.25;
+        float hora = 0;
+        float minuto = 0; 
+        float segundo = 0;
+        float tiempo_s = 0;
+        
+        System.out.println("Ingrese las horas:.");
+        hora = entrada.nextFloat();
+        System.out.println("Ingrese los minutos:.");
+        minuto = entrada.nextFloat();
+        System.out.println("Ingrese los segundos:.");
+        segundo = entrada.nextFloat();
+        tiempo_s = segundo + (minuto * 60)+ ((hora * 60) * 60);
+        System.out.println("el costo es de: "+ (tiempo_s * presio_s));
     }
     
 }
